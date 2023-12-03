@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesFragment">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Consejos de Seguridad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/consejos"
+        android:layout_width="368dp"
+        android:layout_height="467dp"
+        android:layout_marginTop="25dp"
+        android:text="
+1 - Longitud y complejidad: Utiliza contraseñas largas, preferiblemente de al menos 12 caracteres, que combinen letras (mayúsculas y minúsculas), números y caracteres especiales. Evita palabras comunes o secuencias obvias.\n\n
+2 - Evita información personal: No uses información personal fácilmente accesible o relacionada contigo, como tu nombre, fecha de nacimiento, nombre de mascotas o números de teléfono.\n\n
+3 - Contraseñas únicas: Crea contraseñas diferentes para cada cuenta o servicio. De esta manera, si una contraseña se ve comprometida, no pondrá en riesgo tus otras cuentas.\n\n
+4 - Actualización periódica: Cambia tus contraseñas regularmente, especialmente en servicios sensibles como banca en línea o correo electrónico. Esto reduce las posibilidades de que alguien acceda a tu cuenta utilizando una contraseña antigua.\n\n
+5 - Usa un gestor de contraseñas: Considera utilizar un gestor de contraseñas para generar y almacenar de forma segura tus contraseñas. Estos programas pueden crear contraseñas complejas y únicas para cada cuenta y te ayudan a recordarlas sin tener que escribirlas en todas partes."
+        android:textAlignment="inherit"
+        android:textColor="#6A189A"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo" />
+
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="Volver al Menú"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consejos"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

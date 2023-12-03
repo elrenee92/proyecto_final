@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="mx.edu.uthermosillo.apps.renecastro.proyecto_final.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_olvidoFragment"
+            app:destination="@id/olvidoFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="mx.edu.uthermosillo.apps.renecastro.proyecto_final.RegistroFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/olvidoFragment"
+        android:name="mx.edu.uthermosillo.apps.renecastro.proyecto_final.OlvidoFragment"
+        android:label="fragment_olvido"
+        tools:layout="@layout/fragment_olvido" >
+        <action
+            android:id="@+id/action_olvidoFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="mx.edu.uthermosillo.apps.renecastro.proyecto_final.PrincipalFragment"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principalFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_detallesFragment"
+            app:destination="@id/detallesFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_consejosFragment"
+            app:destination="@id/consejosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detallesFragment"
+        android:name="mx.edu.uthermosillo.apps.renecastro.proyecto_final.DetallesFragment"
+        android:label="fragment_detalles"
+        tools:layout="@layout/fragment_detalles" >
+        <action
+            android:id="@+id/action_detallesFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consejosFragment"
+        android:name="mx.edu.uthermosillo.apps.renecastro.proyecto_final.ConsejosFragment"
+        android:label="fragment_consejos"
+        tools:layout="@layout/fragment_consejos" >
+        <action
+            android:id="@+id/action_consejosFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
+</navigation>
