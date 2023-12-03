@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Contraseñas"
+        android:id="@+id/mpassword"
+        android:icon="@drawable/ic_password"/>
+
+    <item android:title="Seguridad"
+        android:id="@+id/msecurity"
+        android:icon="@drawable/ic_security"/>
+
+    <item android:title="Salir"
+        android:id="@+id/mexit"
+        android:icon="@drawable/ic_clear"/>
+</menu>
